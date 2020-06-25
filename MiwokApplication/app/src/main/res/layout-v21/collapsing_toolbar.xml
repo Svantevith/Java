@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen"
+    android:background="@color/light_gray">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        app:expanded="false">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbarid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/colliding"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+            app:title="Learn Miwok"
+            app:expandedTitleTextAppearance="@style/AppBarTitleStyle"
+            app:collapsedTitleTextAppearance="@style/AppBarTitleStyle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16sp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:tint="@color/splash_screen_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                    app:layout_constraintEnd_toStartOf="@+id/textView13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView13"
+                    app:srcCompat="@android:drawable/ic_dialog_info" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="1"
+                    android:text="Filip Szczybura"
+                    android:textColor="@android:color/primary_text_light_nodisable"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/amatica_sc_regular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.25"
+                    android:text="All copyrights belong to:"
+                    android:textColor="@android:color/primary_text_light_nodisable"
+                    app:fontFamily="sans-serif-light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="4dp"
+                    android:alpha="1"
+                    android:text="szczyburafilip@gmail.com"
+                    android:textColor="@android:color/primary_text_light_nodisable"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/amatica_sc_regular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:tint="@color/splash_screen_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                    app:layout_constraintEnd_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/textView14"
+                    app:srcCompat="@android:drawable/ic_dialog_email"
+                    app:tintMode="src_in" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarid"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_send_white_24dp"
+        app:backgroundTint="@color/yellow"
+        app:borderWidth="1dp"
+        app:elevation="8dp"
+        app:hoveredFocusedTranslationZ="8dp"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|end|right"
+        app:pressedTranslationZ="8dp" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <!--activity_home_dashboard.xml-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context="android.example.com.homedashboard.HomeScreen">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="64dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/numbers_CardView"
+                    android:layout_width="168dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/light_purple"
+                    app:cardCornerRadius="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/circle_background_deep_purple"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_format_list_numbered_white_24dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Numbers"
+                            android:textAppearance="@style/AppBarTitleStyle"
+                            android:textColor="?android:attr/textColorTertiary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/amatica_sc_bold">
+
+                        </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="8dp"
+                            android:background="@color/deep_purple">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="Learn how to say different numbers in Miwok language !"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/amatica_sc_bold">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/family_members_CardView"
+                    android:layout_width="168dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/light_pink"
+                    app:cardCornerRadius="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/circle_background_pink"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_people_white_24dp"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Family members"
+                            android:textColor="?android:attr/textColorTertiary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/amatica_sc_bold"></TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="8dp"
+                            android:background="@color/pink"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="Learn how to call your family members in Miwok language !"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/amatica_sc_bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/colors_CardView"
+                    android:layout_width="168dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/light_green"
+                    app:cardCornerRadius="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/circle_background_green"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_color_lens_white_24dp"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Colors"
+                            android:textColor="?android:attr/textColorTertiary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/amatica_sc_bold"></TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="8dp"
+                            android:background="@color/green"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="Learn how to name different colors in Miwok language !"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/amatica_sc_bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phrases_CardView"
+                    android:layout_width="168dp"
+                    android:layout_height="192dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/light_yellow"
+                    app:cardCornerRadius="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/circle_background_yellow"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_people_white_24dp"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Phrases"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/amatica_sc_bold"></TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="8dp"
+                            android:background="@color/yellow"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="Learn the fundamental phrases in Miwok language !"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="12sp"
+                            app:fontFamily="@font/amatica_sc_bold"></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

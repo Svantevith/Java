@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:label">Miwok App</item>
+        <item name="android:icon">@drawable/indianic_icon</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="android:textAppearance">@font/amatica_sc_bold</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="android:titleTextColor">@android:color/white</item>
+
+    </style>
+
+<!--    <style name="CollapsingToolbarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:label">Learn Miwok</item>
+        <item name="android:icon">@drawable/indianic_icon</item>
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/pink</item>
+    </style>-->
+
+    <style name="AppBarTitleStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:titleTextColor">@android:color/white</item>
+        <item name="android:textAppearance">@style/AppTheme</item>
+        <item name="android:background">@color/color_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+</resources>

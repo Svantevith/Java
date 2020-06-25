@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#a1a37a</color>#a1a37a
+    <color name="color_primary2">#52351e</color>
+    <color name="color_primary_dark">#2F1D1A</color>
+    <color name ="color_secondary">#ffb300</color>
+    <color name="background_color">#e3d3ce</color>
+    <color name="background_color2">#f8fad0</color>
+    <color name="icon_background">#FFFFFF</color>
+    <color name="light_gray">#ededed</color>
+    <color name="deep_purple">#7c4dff</color>
+    <color name="light_purple">#EDE6FF</color>
+    <color name="yellow">#ffb300</color>
+    <color name="light_yellow">#FDF7E9</color>
+    <color name="green">#009900</color>
+    <color name="light_green">#EEFFEE</color>
+    <color name="pink">#ff4081</color>
+    <color name="light_pink">#FFECF2</color>
+    <color name="splash_screen_background">#fbc701</color>
+    <color name="forest_green">#c4c69f</color>
+</resources>
